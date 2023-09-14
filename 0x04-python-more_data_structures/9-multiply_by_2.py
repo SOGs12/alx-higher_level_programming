@@ -8,5 +8,5 @@ def double_dictionary_values(input_dict: Dict[str, int]) -> Dict[str, int]:
     for key in new_dict:
         new_dict[key] *= 2
 
-    return new_dict
+    return (new_dict)
 
