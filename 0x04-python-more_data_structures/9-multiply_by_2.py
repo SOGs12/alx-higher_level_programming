@@ -1,12 +1,9 @@
 #!/usr/bin/python3
+def multiply_by_2(a_dictionary):
+    new_dir = a_dictionary.copy()
+    list_keys = list(new_dir.keys())
 
-from typing import Dict
+    for i in list_keys:
+        new_dir[i] *= 2
 
-def double_dictionary_values(input_dict: Dict[str, int]) -> Dict[str, int]:
-    new_dict = input_dict.copy()
-
-    for key in new_dict:
-        new_dict[key] *= 2
-
-    return (new_dict)
-
+    return (new_dir)
